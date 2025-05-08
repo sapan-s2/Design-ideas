@@ -1,0 +1,114 @@
+## System Design & Tool Selection
+
+**Recommended Tools:**
+
+- **Lead Capture:** Use Google Ads Lead Form Extensions with webhook integration for real-time lead delivery[2][3][7][12].
+- **Workflow Automation:** Platforms like Zapier or Make.com to automate data flows between Google Ads, CRM, voice call tools, and calendars[5][6][9][10].
+- **Voice Call Triggering:** Twilio or similar programmable voice platforms to initiate automated outbound calls and deliver scripts.
+- **Appointment Scheduling:** Calendly or Google Calendar integration for real-time appointment booking.
+- **Lead Tracking:** Google Sheets or a lightweight CRM (e.g., HubSpot, Salesforce) for status tracking and reporting[3][7][12].
+
+**Integration Workflow:**
+
+1. Google Ads Lead Form submission triggers a webhook.
+2. Webhook sends lead data to an automation platform (Zapier/Make).
+3. Automation initiates:
+   - Immediate outbound voice call via Twilio.
+   - Lead data entry into CRM/Google Sheet.
+   - Appointment scheduling workflow.
+4. Follow-up sequences and reminders handled by automation platform.
+5. All activities logged in a shared dashboard.
+
+---
+
+## Lead Capture
+
+- **Implementation:** Set up Google Ads Lead Form Extensions to collect name, contact info, submission time, and campaign source[2][7][12].
+- **Integration:** Use webhook to push lead data instantly to your CRM or a Google Sheet for centralized storage and processing[2][3][9][12].
+
+---
+
+## Voice Call Triggering
+
+- **Automation:** Upon lead capture, trigger Twilio (or similar) to call the lead immediately.
+- **Scripted Call:** Use a pre-recorded or AI-driven script to:
+  - Introduce your company.
+  - Qualify the lead (ask key questions).
+  - Offer appointment scheduling.
+- **Fallback:** If call is unanswered, trigger SMS or email follow-up.
+
+---
+
+## Appointment Handling
+
+- **Calendar Integration:** Sync Twilio (or automation platform) with Calendly or Google Calendar.
+- **Booking Options:** Allow leads to book via phone keypad, SMS, or email link.
+- **Tracking:** Log all scheduled appointments in a shared calendar and CRM/Sheet for team visibility.
+
+---
+
+## Follow-Up Logic
+
+- **Missed Calls:** If the lead does not answer, automatically send a follow-up SMS/email with a booking link.
+- **Reminders:** Schedule additional follow-up attempts (calls, SMS, or emails) at defined intervals.
+- **Escalation:** If no response after a set number of attempts, escalate to a team member for manual outreach.
+
+---
+
+## Lead Tracking & Reporting
+
+- **Dashboard:** Use Google Sheets or CRM dashboard to log:
+  - Lead status (new, contacted, qualified, scheduled, etc.)
+  - Voice call result (answered, missed, declined)
+  - Appointment status (scheduled, completed, no-show)
+  - Follow-up attempts and outcomes[3][7][9][12].
+- **Access:** Share dashboard with the AES team for real-time updates and collaboration.
+
+---
+
+## Testing & Handover
+
+- **End-to-End Testing:** Simulate lead submissions and verify all automations (capture, call, booking, follow-up, reporting).
+- **Documentation:** Provide step-by-step guides, workflow diagrams, and access credentials.
+- **Training:** Optional live or recorded session for AES staff to ensure smooth adoption.
+
+---
+
+## Summary Table: Key Tools & Functions
+
+| Function                | Recommended Tool(s)         | Integration Method         |
+|-------------------------|----------------------------|---------------------------|
+| Lead Capture            | Google Ads Lead Forms      | Webhook to Zapier/Make    |
+| Automation              | Zapier / Make.com          | Workflow builder          |
+| Voice Call              | Twilio                     | API integration           |
+| Appointment Scheduling  | Calendly / Google Calendar | API/Zapier integration    |
+| Lead Tracking           | Google Sheets / CRM        | Automated entry           |
+| Reporting               | CRM / Google Sheets        | Dashboard                 |
+
+---
+
+## Best Practices
+
+- Use webhook integration for real-time lead delivery and minimal manual effort[2][3][7][12].
+- Automate as much of the workflow as possible to improve speed and consistency[5][6][9][10].
+- Regularly test and refine scripts and follow-up sequences to maximize conversions.
+- Ensure all data handling complies with privacy and consent requirements.
+
+This system will significantly reduce response time, increase conversion rates, and maximize your return on advertising spend by ensuring every lead is engaged instantly and efficiently.
+
+Citations:
+[1] https://leadsbridge.com/blog/google-lead-form-ads/
+[2] https://support.google.com/google-ads/answer/9423234
+[3] https://www.customerlabs.com/blog/connect-crm-with-google-ads-integration/
+[4] https://neodove.com/google-ads-for-lead-generation/
+[5] https://zapier.com/apps/leadinfo/integrations/google-ads
+[6] https://zapier.com/apps/nocodeform/integrations/google-ads
+[7] https://www.customerlabs.com/blog/google-lead-ads-using-guide/
+[8] https://www.nimbata.com/tips/google-ads-lead-scoring-importation
+[9] https://www.make.com/en/integrations/google-ads-lead-forms
+[10] https://www.youtube.com/watch?v=Jku6nkiNY-c
+[11] https://acuto.io/blog/google-ads-automation-tools/
+[12] https://www.ppcadeditor.com/unlocking-the-potential-with-google-ads-lead-form-extension/
+
+---
+Answer from Perplexity: pplx.ai/share
